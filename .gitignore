@@ -5,7 +5,7 @@
 dist
 tmp
 out-tsc
-dev.ts
+config/dev.ts
 
 # dependencies
 node_modules
