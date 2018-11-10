@@ -1,10 +1,10 @@
 import { BehaviorSubject, Observable } from "rxjs";
 import { distinctUntilChanged, pluck } from "rxjs/operators";
 
-import { State } from "./state";
+import { State } from "../model";
 
 const state: State = {
-  projects: undefined
+  projects: []
 };
 
 export class Store {

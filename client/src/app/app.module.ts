@@ -6,11 +6,10 @@ import { Store } from "./store";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { ProjectsModule } from "./projects/projects.module";
-import { SongsModule } from "./songs/songs.module";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ProjectsModule, SongsModule],
+  imports: [BrowserModule, AppRoutingModule, ProjectsModule],
   providers: [Store],
   bootstrap: [AppComponent]
 })

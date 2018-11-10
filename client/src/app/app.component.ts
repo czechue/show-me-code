@@ -4,9 +4,7 @@ import { Component } from "@angular/core";
   selector: "app-root",
   template: `
     <div>
-      <app-songs-playlist></app-songs-playlist>
-      <app-songs-listened></app-songs-listened>
-      <app-songs-favourites></app-songs-favourites>
+      This app works
     </div>
   `
 })
