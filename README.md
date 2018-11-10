@@ -72,5 +72,3 @@ _Now you can develop frontend code._
 - create Pull Request: [GH Link](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request)
 
 8. your branch can be merged now
-
-dodane na koncu
