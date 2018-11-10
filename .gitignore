@@ -1,7 +1,7 @@
 .idea/
 node_modules
 dist
-dev.tst
+src/config/dev.ts
 dist
 tmp
 out-tsc
