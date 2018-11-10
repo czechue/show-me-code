@@ -52,9 +52,12 @@ export const createSolution = async (
     });
 
     try {
-        const projectSolution = await Project.findOneAndUpdate({_id: project}, {
-            $push: { solutions: solution }
-        });
+        const projectSolution = await Project.findOneAndUpdate(
+            { _id: project },
+            {
+                $push: { solutions: solution }
+            }
+        );
         await User.findOneAndUpdate(user, { $push: { solutions: solution } });
         await solution.save();
         res.send(solution);

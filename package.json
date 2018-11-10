@@ -1,0 +1,60 @@
+{
+    "name": "show-me-code",
+    "version": "1.0.0",
+    "description": "Code Challenge App",
+    "main": "index.js",
+    "scripts": {
+        "build-ts": "tsc",
+        "start": "npm run serve",
+        "serve": "node dist/index.js",
+        "watch-node": "nodemon dist/index.js",
+        "watch-ts": "tsc -w",
+        "test": "NODE_ENV=test jest --forceExit --verbose --detectOpenHandles",
+        "watch-test": "npm run test -- --watchAll"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/czechue/show-me-code.git"
+    },
+    "keywords": [
+        "showmecode"
+    ],
+    "author": "michal lester",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/czechue/show-me-code/issues"
+    },
+    "homepage": "https://github.com/czechue/show-me-code#readme",
+    "devDependencies": {
+        "@types/express": "^4.16.0",
+        "@types/jest": "^23.3.1",
+        "@types/mongodb": "^3.1.4",
+        "@types/mongoose": "^5.2.9",
+        "@types/node": "^10.9.4",
+        "@types/passport": "^0.4.6",
+        "@types/supertest": "^2.0.5",
+        "jest": "^23.5.0",
+        "nodemon": "^1.18.4",
+        "passport-google-oauth20": "^1.0.0",
+        "supertest": "^3.1.0",
+        "ts-jest": "^23.1.4",
+        "ts-node": "^7.0.1",
+        "tslint": "^5.11.0",
+        "typescript": "^3.0.3"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "cookie-session": "^2.0.0-beta.3",
+        "express": "^4.16.3",
+        "migrate-mongoose": "^3.2.2",
+        "mongoose": "^5.2.12",
+        "passport": "^0.4.0",
+        "path-parser": "^4.2.0"
+    },
+    "prettier": {
+        "singleQuote": true,
+        "eslintIntegration": true,
+        "tabWidth": 4,
+        "useTabs": false
+    }
+}
