@@ -5,11 +5,11 @@ export const authRedirect = async (
     res: Response,
     next: Function
 ) => {
-    res.redirect('/api/projects');
+    res.redirect('/projects');
 };
 
 export const authLogout = async (
-    req: Request,
+    req: any,
     res: Response,
     next: Function
 ) => {
@@ -18,7 +18,7 @@ export const authLogout = async (
 };
 
 export const authCurrentUser = async (
-    req: Request,
+    req: any,
     res: Response,
     next: Function
 ) => {

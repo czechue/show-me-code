@@ -4,9 +4,7 @@ import { Component, OnInit } from '@angular/core';
     selector: 'app-root',
     template: `
     <div>
-      This app works
-        <!--<app-projects-list></app-projects-list>-->
-        <!--<app-project></app-project>-->
+        <app-header></app-header>
         <router-outlet></router-outlet>
     </div>
   `
