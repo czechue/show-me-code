@@ -7,9 +7,11 @@ import { Store } from '../store';
 
 @Injectable()
 export class ProjectsService {
+    // todo: why Observable<any> doesnt work
     getProjects$: Observable<any> = this.http
         .get('/api/projects')
-        .pipe(tap(data => this.store.set('projects', data)));
+        .pipe(
+            tap(data => this.store.set('projects', data)));
 
     constructor(private http: HttpClient, private store: Store) {}
 }

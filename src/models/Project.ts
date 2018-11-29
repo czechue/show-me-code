@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 import { Task } from './Task';
 
+
 const ProjectSchema = new Schema({
     title: String,
     user: {
