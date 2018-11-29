@@ -7,15 +7,7 @@ import { filter, map } from 'rxjs/operators';
 
 @Component({
     selector: 'app-project',
-    template: `
-    <div>
-        Project detail:
-        <p>Created at: {{ (project$ | async)?.createdAt }}</p>
-        <p>Title: {{ (project$ | async)?.title }}</p>
-        <span>JSON:</span>
-        <pre>{{ (project$ | async | json) }}</pre>
-    </div>
-  `,
+    templateUrl: './project.component.html',
     styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {

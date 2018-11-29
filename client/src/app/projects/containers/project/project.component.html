@@ -1,1 +1,13 @@
-<p>first commit</p>
+<div class="project-wrapper">
+    
+    <div>
+        Project detail:
+        <p>Created at: {{ (project$ | async)?.createdAt }}</p>
+        <p>Title: {{ (project$ | async)?.title }}</p>
+        <span>JSON:</span>
+        <pre>{{ (project$ | async | json) }}</pre>
+    </div>
+  
+    
+    <img src="https://via.placeholder.com/300">
+</div>
