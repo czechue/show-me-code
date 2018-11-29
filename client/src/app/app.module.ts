@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ProjectsModule } from './projects/projects.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { HeaderComponent } from './shared/header/header.component';
 
 // routes
 export const ROUTES: Routes = [
@@ -26,7 +27,7 @@ export const ROUTES: Routes = [
         HttpClientModule
     ],
     providers: [Store],
-    declarations: [AppComponent],
+    declarations: [AppComponent, HeaderComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
