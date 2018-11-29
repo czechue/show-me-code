@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+// COLORS
+$black: #000000;
+$white: $ffffff;
+$purple-heart: #6633cc;
+$geraldine: #f9909a;
+$meteorite: #412578;
+$mona-lisa: #fe9a8b;
+$manatee: #948da2;
+$dolphin: #6d6380;
+
+// COLOR USE
+$text-color: $dolphin;
+$background-color: $white;
+
+// BREAKPOINTS
+$bp-small: 34.375em; // 550px;
+$bp-medium: 47.5em; // 760px;
+$bp-desktop: 64em; // 1024px;
+$bp-wide: 105em; // 1680px;
+
+// FONT
+// Open+Sans:400,700|Poppins:400,500,600,700
+$font-family: 'Poppins', sans-serif;
+$font-family-second: 'Open Sans', sans-serif;
+$default-font-size: 1.6rem;
+
+// BASE HTML SETUP
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+    font-family: $font-family;
+}
+
+body {
+    background-color: $background-color;
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: $bp-wide) {
+            @content;
+        } //1680
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: $bp-desktop) {
+            @content;
+        } //1024px;
+    }
+    @if $breakpoint == tab {
+        @media only screen and (min-width: $bp-medium) {
+            @content;
+        } //760px;
+    }
+    @if $breakpoint == phone {
+        @media only screen and (min-width: $bp-small) {
+            @content;
+        } //550px;
+    }
+}
