@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
         <header class="header">
             <nav class="navbar">
                 <div class="container wrapper navbar-container">
-                    <a class="navbar-logo" href="#"> Pokaż mi Kod </a>
+                    <a class="navbar-logo" href="#">
+                        <img src="assets/Logo.png" alt="" />
+                    </a>
 
                     <ul class="navbar-nav">
                         <li class="navbar-item active">
