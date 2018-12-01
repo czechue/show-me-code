@@ -1,0 +1,16 @@
+@import "../../../styles.scss";
+
+.header {
+    width: 100%;
+    height: $header-height;
+}
+
+.navbar {
+    max-width: $large-width;
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 $p3;
+}
+

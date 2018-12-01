@@ -4,8 +4,8 @@ import { Component, OnInit } from '@angular/core';
     selector: 'app-header',
     template: `
         <header class="header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container container-fluid">
+            <nav class="navbar">
+                <div class="container wrapper">
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -51,6 +51,7 @@ import { Component, OnInit } from '@angular/core';
                 </div>
             </nav>
         </header>
-    `
+    `,
+    styleUrls: ['header.component.scss']
 })
 export class HeaderComponent {}
