@@ -1,16 +1,55 @@
-@import "../../../styles.scss";
+@import '../../../styles.scss';
 
 .header {
     width: 100%;
-    height: $header-height;
+    background-color: $geraldine;
 }
 
 .navbar {
     max-width: $large-width;
     margin: 0 auto;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        min-height: $header-height;
+        align-content: center;
+    }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &-item {
+        display: inline-block;
+        padding-left: $p4;
+    }
+
+    &-link {
+        align-self: center;
+        text-decoration: none;
+        color: $white;
+        font-size: $navbar-links-font-size;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $manatee;
+        }
+        &:active {
+            color: $manatee;
+        }
+        //&:visited {
+        //    color: $manatee;
+        //}
+    }
+
+    &-logo {
+        align-self: center;
+    }
 }
 
 .wrapper {
     margin: 0 $p3;
 }
-
