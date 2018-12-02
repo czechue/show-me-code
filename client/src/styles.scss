@@ -24,6 +24,7 @@ $bp-wide: 105em; // 1680px;
 $font-family: 'Poppins', sans-serif;
 $font-family-second: 'Open Sans', sans-serif;
 $default-font-size: 1.6rem;
+$small-font-size: 1.2rem;
 
 // GRID WIDTHS:
 $large-width: 75rem; // 1200px;
@@ -40,6 +41,9 @@ $p5: 32px;
 $p6: 40px;
 $p7: 48px;
 $p7: 56px;
+
+// BORDER RADIUS
+$default-border-radius: 8px;
 
 // BASE HTML SETUP
 * {
@@ -86,3 +90,5 @@ body {
         } //550px;
     }
 }
+
+

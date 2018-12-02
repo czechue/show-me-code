@@ -1,0 +1,26 @@
+@import '../../../../../../styles.scss';
+
+.filter-tabs__item {
+    min-width: 72px;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    color: $dolphin;
+    font-family: $font-family;
+    font-size: $small-font-size;
+    border: none;
+    background: none;
+    border-radius: $default-border-radius;
+    margin: 0 2rem;
+    cursor: pointer;
+    transition: .25s all ease-in-out;
+}
+
+.filter-tabs__item--active {
+    background: $mona-lisa;
+    color: $white;
+}
+
+.filter-tabs__item:hover {
+    background: $mona-lisa;
+    color: $white;
+}

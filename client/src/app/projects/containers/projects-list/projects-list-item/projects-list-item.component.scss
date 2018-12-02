@@ -1,0 +1,55 @@
+@import '../../../../../styles.scss';
+
+.project {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+        .project-details {
+            top: 0;
+        }
+    }
+}
+
+.project__img {
+    width: 320px;
+    height: 320px;
+    background: url('https://cdn.athemes.com/wp-content/uploads/Sole-One-Page-WordPress-Theme.jpg') center no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.project-details {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    transition: 0.35s all ease-in-out;
+    border-radius: $default-border-radius;
+}
+
+.project-details__title {
+    font-size: $default-font-size;
+    color: $white;
+    margin-top: $p3;
+}
+
+.project-details__cat {
+    font-size: $default-font-size;
+    color: $geraldine;
+
+}
+
+.project-details__date {
+    color: $white;
+    font-size: $small-font-size;
+    position: absolute;
+    bottom: $p3;
+    right: $p3;
+}
