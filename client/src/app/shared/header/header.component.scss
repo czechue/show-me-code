@@ -1,9 +1,13 @@
-@import '../../../styles.scss';
+@import 'styles';
 
 .header {
     width: 100%;
-    background: rgb(102,51,204);
-    background: linear-gradient(180deg, rgba(102,51,204,1) 0%, rgba(249,144,154,1) 100%);
+    background: rgb(102, 51, 204);
+    background: linear-gradient(
+        180deg,
+        rgba(102, 51, 204, 1) 0%,
+        rgba(249, 144, 154, 1) 100%
+    );
 }
 
 .navbar {
@@ -41,7 +45,6 @@
         &:active {
             color: $manatee;
         }
-
     }
 
     &-logo {
