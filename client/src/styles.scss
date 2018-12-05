@@ -4,10 +4,10 @@ $black: #000000;
 $white: #ffffff;
 $purple-heart: #6633cc;
 $geraldine: #f9909a;
-$meteorite: #412578;
 $mona-lisa: #fe9a8b;
-$manatee: #948da2;
+$meteorite: #412578;
 $dolphin: #6d6380;
+$manatee: #948da2;
 
 // COLOR USE
 $text-color: $dolphin;
@@ -44,6 +44,8 @@ $p7: 56px;
 
 // BORDER RADIUS
 $default-border-radius: 8px;
+// TYPOGRAPHY
+$navbar-links-font-size: 1.6rem;
 
 // BASE HTML SETUP
 * {

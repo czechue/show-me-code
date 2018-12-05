@@ -57,7 +57,7 @@ _Now you can develop frontend code._
 
 6. when you want to save your branch on GH repo:
 
-'git push origin <your-branch-name>'
+`git push origin <your-branch-name>`
 
 (!!before you push - always first pull current master branch so you can solve conflicts locally)
 ```markdown
