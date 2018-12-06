@@ -7,16 +7,15 @@
     justify-content: center;
     flex-flow: column wrap;
     align-items: center;
-    margin-top: 7%;
 }
 
 .container {
     width: 100%;
-    max-width: 960px;
+    max-width: $large-width;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: $p4;
     grid-row-gap: $p4;
-    margin-top: 10rem;
+    margin-top: $p8;
     list-style-type: none;
 }

@@ -8,10 +8,11 @@ import { Project } from '../../../model';
     selector: 'app-projects-list',
     template: `
         <div class="projects-list-container">
-            <app-filter-tabs></app-filter-tabs>
             <ul class="container">
                 <li *ngFor="let item of (projects$ | async)">
-                    <app-projects-list-item></app-projects-list-item>
+                    <app-projects-list-item
+                    [item]="item"
+                    ></app-projects-list-item>
                 </li>
             </ul>
         </div>
@@ -25,7 +26,7 @@ export class ProjectsListComponent implements OnInit {
     constructor(
         private projectsService: ProjectsService,
         private store: Store
-    ) {}
+    ) { }
 
     ngOnInit() {
         this.projects$ = this.store.select('projects');

@@ -1,0 +1,59 @@
+@import '../../../../styles.scss';
+
+.project {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    cursor: pointer;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &:hover .project-details {
+        opacity: 1;
+    }
+}
+
+.project-details {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+
+    position: absolute;
+    left: 0;
+
+    opacity: 0;
+    background: $meteorite-overlay;
+
+    color: $white;
+
+    font-size: $default-font-size;
+    font-weight: 500;
+
+    &__category {
+        margin: $p2;
+        color: $geraldine;
+    }
+
+    &__title {
+        margin: $p2;
+    }
+
+    &__date {
+        position: absolute;
+        right: $p2;
+        bottom: $p2;
+        font-size: $small-font-size;
+    }
+}
