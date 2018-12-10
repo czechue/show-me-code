@@ -1,13 +1,79 @@
-<div class="project-wrapper">
-    
-    <div>
-        Project detail:
-        <p>Created at: {{ (project$ | async)?.createdAt }}</p>
-        <p>Title: {{ (project$ | async)?.title }}</p>
-        <span>JSON:</span>
-        <pre>{{ (project$ | async | json) }}</pre>
+<div class="project">
+    <img class="project-image" src="https://via.placeholder.com/300" alt="">
+    <h2 class="project-title">Create new project</h2>
+    <h3 class="project-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    <ul class="project-tasks">
+        <li class="project-task">Lorem ipsum dolor sit amet.</li>
+        <li class="project-task">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, assumenda.</li>
+        <li class="project-task">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, impedit.</li>
+        <li class="project-task">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+        <li class="project-task">Lorem, ipsum.</li>
+    </ul>
+
+    <span class="project-author">Author: Tomek Panczo</span>
+    <button class="project-send">Send your solution</button>
+
+    <div class="project-solutions">
+        <div class="project-solution">
+            <ul>
+                <li>Author: Jacek Krzynówek</li>
+                <li>Stack: Angular 10</li>
+                <li>Points: 18</li>
+                <li>Date: 21.11.2018</li>
+            </ul>
+            <button class="github">GH Link</button>
+            <button class="live">Live Link</button>
+        </div>
+        <div class="project-solution">
+            <ul>
+                <li>Author: Jacek Krzynówek</li>
+                <li>Stack: Angular 10</li>
+                <li>Points: 18</li>
+                <li>Date: 21.11.2018</li>
+            </ul>
+            <button class="github">GH Link</button>
+            <button class="live">Live Link</button>
+        </div>
+        <div class="project-solution">
+            <ul>
+                <li>Author: Jacek Krzynówek</li>
+                <li>Stack: Angular 10</li>
+                <li>Points: 18</li>
+                <li>Date: 21.11.2018</li>
+            </ul>
+            <button class="github">GH Link</button>
+            <button class="live">Live Link</button>
+        </div>
+        <div class="project-solution">
+            <ul>
+                <li>Author: Jacek Krzynówek</li>
+                <li>Stack: Angular 10</li>
+                <li>Points: 18</li>
+                <li>Date: 21.11.2018</li>
+            </ul>
+            <button class="github">GH Link</button>
+            <button class="live">Live Link</button>
+        </div>
+        <div class="project-solution">
+            <ul>
+                <li>Author: Jacek Krzynówek</li>
+                <li>Stack: Angular 10</li>
+                <li>Points: 18</li>
+                <li>Date: 21.11.2018</li>
+            </ul>
+            <button class="github">GH Link</button>
+            <button class="live">Live Link</button>
+        </div>
     </div>
-  
-    
-    <img src="https://via.placeholder.com/300">
+
+
+</div>
+
+
+<div>
+    Project detail:
+    <p>Created at: {{ (project$ | async)?.createdAt }}</p>
+    <p>Title: {{ (project$ | async)?.title }}</p>
+    <span>JSON:</span>
+    <pre>{{ (project$ | async | json) }}</pre>
 </div>
