@@ -13,6 +13,10 @@ $manatee: #948da2;
 $text-color: $dolphin;
 $background-color: $white;
 
+$dark-color-text: $meteorite;
+
+$buttons-text-color: $white;
+
 // BREAKPOINTS
 $bp-small: 34.375em; // 550px;
 $bp-medium: 47.5em; // 760px;
@@ -65,6 +69,10 @@ html {
 
 body {
     background-color: $background-color;
+}
+
+ul {
+    list-style-type: none;
 }
 
 @mixin respond($breakpoint) {
