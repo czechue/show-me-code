@@ -16,6 +16,9 @@ $background-color: $white;
 $dark-color-text: $meteorite;
 
 $buttons-text-color: $white;
+$buttons-light-gradient: linear-gradient(90deg, #f78ca0 0%, #fe9a8b 100%);
+$buttons-light-gradient-reverse: linear-gradient(90deg, #fe9a8b 0%, #f78ca0 100%);
+$project-hr-color: $geraldine;
 
 // BREAKPOINTS
 $bp-small: 34.375em; // 550px;

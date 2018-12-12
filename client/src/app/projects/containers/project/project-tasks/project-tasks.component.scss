@@ -1,0 +1,25 @@
+@import 'styles';
+
+$font-size: 1.4;
+$normalize-font-addon: 1.15;
+$square:(($font-size*$normalize-font-addon)*1rem);
+
+.tasks {
+    &-item {
+        position: relative;
+        padding: $p2 0 $p2 $p2;
+        margin: $p2 0 $p2 0;
+        background-color: #eee;
+        font-size: $font-size *1rem;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: $square;
+            height: $square;
+            margin-left: (-($square+0.3));
+            top: 15%;
+            background: $buttons-light-gradient;
+        }
+    }
+}

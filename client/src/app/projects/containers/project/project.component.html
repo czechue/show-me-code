@@ -2,13 +2,7 @@
     <div class="project-column--left">
         <img class="project-image" src="https://via.placeholder.com/300" alt="">
         <span class="project-author">Author: Tomek Panczo</span>
-        <ul class="tasks">
-            <li class="tasks-item">Lorem ipsum dolor sit amet.</li>
-            <li class="tasks-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, assumenda.</li>
-            <li class="tasks-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, impedit.</li>
-            <li class="tasks-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li class="tasks-item">Lorem, ipsum.</li>
-        </ul>
+            <app-project-tasks></app-project-tasks>
         <button class="project-button project-add">Add your solution</button>
         <button class="project-button project-send">Send your solution</button>
     </div>
@@ -18,78 +12,17 @@
             <p class="project-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="project-solutions">
-            <div class="solution">
-                <ul class="solution-wrapper">
-                    <li class="solution-author"><span class="solution-label">Author: </span>Jacek Krzynówek</li>
-                    <li class="solution-stack"><span class="solution-label">Stack: </span>Angular 10</li>
-                    <li class="solution-points"><span class="solution-label">Points: </span>18</li>
-                    <li class="solution-date"><span class="solution-label">Date: </span>21.11.2018</li>
-
-                </ul>
-                <div class="solution-buttons-wrapper">
-                    <button class="solution-button solution-github">GH Link</button>
-                    <button class="solution-button solution-live">Live Link</button>
-                </div>
-
-            </div>
-            <div class="solution">
-                <ul class="solution-wrapper">
-                    <li class="solution-author"><span class="solution-label">Author: </span>Jacek Krzynówek</li>
-                    <li class="solution-stack"><span class="solution-label">Stack: </span>Angular 10</li>
-                    <li class="solution-points"><span class="solution-label">Points: </span>18</li>
-                    <li class="solution-date"><span class="solution-label">Date: </span>21.11.2018</li>
-                </ul>
-                <div class="solution-buttons-wrapper">
-                    <button class="solution-button solution-github">GH Link</button>
-                    <button class="solution-button solution-live">Live Link</button>
-                </div>
-            </div>
-            <div class="solution">
-                <ul class="solution-wrapper">
-                    <li class="solution-author"><span class="solution-label">Author: </span>Jacek Krzynówek</li>
-                    <li class="solution-stack"><span class="solution-label">Stack: </span>Angular 10</li>
-                    <li class="solution-points"><span class="solution-label">Points: </span>18</li>
-                    <li class="solution-date"><span class="solution-label">Date: </span>21.11.2018</li>
-                </ul>
-                <div class="solution-buttons-wrapper">
-                    <button class="solution-button solution-github">GH Link</button>
-                    <button class="solution-button solution-live">Live Link</button>
-                </div>
-            </div>
-            <div class="solution">
-                <ul class="solution-wrapper">
-                    <li class="solution-author"><span class="solution-label">Author: </span>Jacek Krzynówek</li>
-                    <li class="solution-stack"><span class="solution-label">Stack: </span>Angular 10</li>
-                    <li class="solution-points"><span class="solution-label">Points: </span>18</li>
-                    <li class="solution-date"><span class="solution-label">Date: </span>21.11.2018</li>
-                </ul>
-                <div class="solution-buttons-wrapper">
-                    <button class="solution-button solution-github">GH Link</button>
-                    <button class="solution-button solution-live">Live Link</button>
-                </div>
-            </div>
-            <div class="solution">
-                <ul class="solution-wrapper">
-                    <li class="solution-author"><span class="solution-label">Author: </span>Jacek Krzynówek</li>
-                    <li class="solution-stack"><span class="solution-label">Stack: </span>Angular 10</li>
-                    <li class="solution-points"><span class="solution-label">Points: </span>18</li>
-                    <li class="solution-date"><span class="solution-label">Date: </span>21.11.2018</li>
-                </ul>
-                <div class="solution-buttons-wrapper">
-                    <button class="solution-button solution-github">GH Link</button>
-                    <button class="solution-button solution-live">Live Link</button>
-                </div>
-            </div>
+            <app-project-solutions></app-project-solutions>
         </div>
     </div>
 
 </div>
 
 
-<!-- <div>
+<div>
     Project detail:
     <p>Created at: {{ (project$ | async)?.createdAt }}</p>
     <p>Title: {{ (project$ | async)?.title }}</p>
-    <span class="solution-label">JSON:</>
+    <span class="solution-label">JSON:</span>
     <pre>{{ (project$ | async | json) }}</pre>
-</div> -->
+</div>
