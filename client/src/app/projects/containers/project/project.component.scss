@@ -17,8 +17,7 @@ $font-size: 1.4;
         display: block;
         max-width: 300px;
         height: auto;
-        margin-right: auto;
-        margin-left: auto;
+       margin: $p4 auto;
     }
     &-header {
         width: 100%;
@@ -41,7 +40,7 @@ $font-size: 1.4;
     &-button {
         width: 10rem;
         height: 3rem;
-        margin: 0 $p1;
+        margin: $p2 $p1;
         border: none;
         border-radius: 4px;
         font-family: $font-family-second;

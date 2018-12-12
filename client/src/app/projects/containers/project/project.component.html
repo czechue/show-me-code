@@ -1,5 +1,9 @@
 <div class="project">
     <div class="project-column--left">
+            <div class="project-header">
+                    <h2 class="project-title">{{ (project$ | async)?.title }}</h2>
+                    <p class="project-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
         <img class="project-image" src="https://via.placeholder.com/300" alt="">
         <span class="project-author">Author: Tomek Panczo</span>
             <app-project-tasks
@@ -9,10 +13,6 @@
         <button class="project-button project-send">Send your solution</button>
     </div>
     <div class="project-column--right">
-        <div class="project-header">
-            <h2 class="project-title">{{ (project$ | async)?.title }}</h2>
-            <p class="project-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
         <div class="project-solutions">
             <app-project-solutions
                 [solutions]="(project$ | async)?.solutions"
