@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Solution } from 'src/app/model';
 
 @Component({
   selector: 'app-project-solutions',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-solutions.component.scss']
 })
 export class ProjectSolutionsComponent implements OnInit {
-
+@Input()  solutions! : Solution[];
   constructor() { }
 
   ngOnInit() {
