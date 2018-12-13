@@ -1,11 +1,9 @@
 @import 'styles';
-//variables
-$font-size: 1.4;
 
 .project {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 1024px;
+    max-width: $medium-width;
     padding: $p6 $p4;
     margin-right: auto;
     margin-left: auto;
@@ -17,11 +15,11 @@ $font-size: 1.4;
         display: block;
         max-width: 300px;
         height: auto;
-       margin: $p4 auto;
+        margin: $p4 auto;
     }
     &-header {
         width: 100%;
-        border-bottom: 2px solid $project-hr-color;
+        border-bottom: 2px solid $theme-hr-color;
     }
     &-title {
         padding-bottom: $p1;
@@ -38,17 +36,11 @@ $font-size: 1.4;
         padding: $p2 0;
     }
     &-button {
-        width: 10rem;
-        height: 3rem;
+        @extend %default-button-styles;
         margin: $p2 $p1;
-        border: none;
-        border-radius: 4px;
-        font-family: $font-family-second;
-        font-weight: 700;
-        color: $buttons-text-color;
     }
     &-add {
-        background: $buttons-light-gradient;
+        background: $button-light-gradient;
     }
     &-column--right {
         padding-left: $p2;

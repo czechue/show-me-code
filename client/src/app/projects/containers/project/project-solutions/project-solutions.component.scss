@@ -1,15 +1,12 @@
 @import 'styles';
 
-$font-size: 1.4;
-
-
 .solution {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: $p3 0;
-    border-bottom: 1px solid $project-hr-color;
+    border-bottom: 1px solid $theme-hr-color;
     color: $text-color;
-    font-size: $font-size *1rem;
+    font-size: $medium-font-size;
     &:hover &-label {
         color: $geraldine;
     }
@@ -28,19 +25,13 @@ $font-size: 1.4;
         align-items: center;
     }
     &-button {
-        width: 10rem;
-        height: 3rem;
+        @extend %default-button-styles;
         margin: 0 $p1;
-        border: none;
-        border-radius: 4px;
-        font-family: $font-family-second;
-        color: $buttons-text-color;
-        font-weight: 700;
         &:first-child {
-            background: $buttons-light-gradient;
+            background: $button-light-gradient;
         }
         &:last-child {
-            background: $buttons-light-gradient-reverse;
+            background: $button-light-gradient-reverse;
         }
     }
 }

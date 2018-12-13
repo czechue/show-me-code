@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
     <div>
         <app-header></app-header>
         <router-outlet></router-outlet>
-        <app-header></app-header>
     </div>
   `
 })

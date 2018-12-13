@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 // COLORS
 $black: #000000;
 $white: #ffffff;
@@ -8,17 +9,15 @@ $mona-lisa: #fe9a8b;
 $meteorite: #412578;
 $dolphin: #6d6380;
 $manatee: #948da2;
-
 // COLOR USE
 $text-color: $dolphin;
 $background-color: $white;
-
 $dark-color-text: $meteorite;
-
-$buttons-text-color: $white;
-$buttons-light-gradient: linear-gradient(90deg, #f78ca0 0%, #fe9a8b 100%);
-$buttons-light-gradient-reverse: linear-gradient(90deg, #fe9a8b 0%, #f78ca0 100%);
-$project-hr-color: $geraldine;
+$theme-hr-color: $geraldine;
+//BUTTONS STYLES
+$button-light-gradient: linear-gradient(90deg, #f78ca0 0%, #fe9a8b 100%);
+$button-light-gradient-reverse: linear-gradient(90deg, #fe9a8b 0%, #f78ca0 100%);
+$button-text-color: $white;
 
 // BREAKPOINTS
 $bp-small: 34.375em; // 550px;
@@ -28,12 +27,17 @@ $bp-wide: 105em; // 1680px;
 
 // FONT
 // Open+Sans:400,700|Poppins:400,500,600,700
-$font-family: 'Poppins', sans-serif;
-$font-family-second: 'Open Sans', sans-serif;
+$font-family: 'Poppins',
+sans-serif;
+$font-family-second: 'Open Sans',
+sans-serif;
+
 $default-font-size: 1.6rem;
+$medium-font-size: 1.4rem;
 
 // GRID WIDTHS:
 $large-width: 75rem; // 1200px;
+$medium-width: 1024px; 
 
 // HEIGHTS
 $header-height: 6.25rem;
@@ -49,8 +53,8 @@ $p7: 48px;
 $p7: 56px;
 
 // TYPOGRAPHY
-$navbar-links-font-size: 1.6rem;
 
+$navbar-links-font-size: 1.6rem;
 // BASE HTML SETUP
 * {
     margin: 0;
@@ -78,23 +82,38 @@ ul {
     list-style-type: none;
 }
 
+//GLOBAL ELEMENTS
+%default-button-styles {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    font-family: $font-family-second;
+    font-weight: 700;
+    color: $button-text-color;
+}
+
+$normalize-font-addon: 1.15;
+$square-side:(($medium-font-size*$normalize-font-addon));
+
+//GLOBAL MEDIA QUERIES
 @mixin respond($breakpoint) {
-    @if $breakpoint == big-desktop {
+    @if $breakpoint==big-desktop {
         @media only screen and (min-width: $bp-wide) {
             @content;
         } //1680
     }
-    @if $breakpoint == desktop {
+    @if $breakpoint==desktop {
         @media only screen and (min-width: $bp-desktop) {
             @content;
         } //1024px;
     }
-    @if $breakpoint == tab {
+    @if $breakpoint==tab {
         @media only screen and (min-width: $bp-medium) {
             @content;
         } //760px;
     }
-    @if $breakpoint == phone {
+    @if $breakpoint==phone {
         @media only screen and (min-width: $bp-small) {
             @content;
         } //550px;
