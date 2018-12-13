@@ -1,5 +1,4 @@
 @import 'styles';
-
 .project {
     display: grid;
     grid-template-columns: 1fr;
@@ -22,14 +21,10 @@
         border-bottom: 2px solid $theme-hr-color;
     }
     &-title {
-        padding-bottom: $p1;
-        font-size: 2.5rem;
-        color: $purple-heart;
-        text-transform: uppercase;
+        @extend %theme-title;
     }
     &-subtitle {
-        padding-bottom: $p1;
-        font-size: 1.2rem;
+        @extend %theme-subtitle
     }
     &-author {
         display: block;
@@ -52,4 +47,3 @@
         padding: $p3 0;
     }
 }
-

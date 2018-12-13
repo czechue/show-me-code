@@ -32,6 +32,7 @@ sans-serif;
 $font-family-second: 'Open Sans',
 sans-serif;
 
+$large-size: 2.5rem;
 $default-font-size: 1.6rem;
 $medium-font-size: 1.4rem;
 
@@ -83,6 +84,18 @@ ul {
 }
 
 //GLOBAL ELEMENTS
+%theme-title {
+    padding-bottom: $p1;
+    font-size: $large-size;
+    color: $purple-heart;
+    text-transform: uppercase;
+}
+
+%theme-subtitle {
+    padding-bottom: $p1;
+    font-size: 1.2rem;
+}
+
 %default-button-styles {
     width: 100px;
     height: 30px;
@@ -95,6 +108,7 @@ ul {
 
 $normalize-font-addon: 1.15;
 $square-side:(($medium-font-size*$normalize-font-addon));
+
 
 //GLOBAL MEDIA QUERIES
 @mixin respond($breakpoint) {
