@@ -1,4 +1,4 @@
-@import '../../../../styles.scss';
+@import 'styles';
 
 .projects-list-container {
     width: 100%;
@@ -10,12 +10,9 @@
 }
 
 .container {
-    width: 100%;
     max-width: $large-width;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: $p4;
-    grid-row-gap: $p4;
+    display: flex;
+    flex-flow: column wrap;
     margin-top: $p8;
     list-style-type: none;
 }

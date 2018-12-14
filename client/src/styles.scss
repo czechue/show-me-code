@@ -9,6 +9,7 @@ $meteorite: #412578;
 $meteorite-overlay: #412578ea; // nie wiem czy takiego hexa z opacity możemy używać
 $dolphin: #6d6380;
 $manatee: #948da2;
+$selago: #F5F3FD;
 
 // COLOR USE
 $text-color: $dolphin;
@@ -27,7 +28,7 @@ sans-serif;
 $font-family-second: 'Open Sans',
 sans-serif;
 $default-font-size: 1.6rem;
-$small-font-size: 1.2rem;
+$small-font-size: 1.4rem;
 
 // GRID WIDTHS:
 $large-width: 75rem; // 1200px;
@@ -46,9 +47,20 @@ $p7: 48px;
 $p8: 56px;
 
 // BORDER RADIUS
-$default-border-radius: 8px;
+$default-border-radius: 4px;
 // TYPOGRAPHY
 $navbar-links-font-size: 1.6rem;
+
+// BUTTONS SIZES
+
+$default-button-width: 104px;
+$default-button-height: 36px;
+
+// FILTER TABS 
+
+$filter-tab-width: 104px;
+$filter-tab-height: 32px;
+
 
 // BASE HTML SETUP
 * {
