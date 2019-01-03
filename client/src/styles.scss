@@ -7,8 +7,11 @@ $purple-heart: #6633cc;
 $geraldine: #f9909a;
 $mona-lisa: #fe9a8b;
 $meteorite: #412578;
+$meteorite-overlay: #412578ea; // nie wiem czy takiego hexa z opacity możemy używać
 $dolphin: #6d6380;
 $manatee: #948da2;
+$selago: #F5F3FD;
+
 // COLOR USE
 $text-color: $dolphin;
 $background-color: $white;
@@ -51,11 +54,25 @@ $p4: 24px;
 $p5: 32px;
 $p6: 40px;
 $p7: 48px;
-$p7: 56px;
+$p8: 56px;
 
+// BORDER RADIUS
+$default-border-radius: 4px;
 // TYPOGRAPHY
 
+
 $navbar-links-font-size: 1.6rem;
+
+// BUTTONS SIZES
+
+$default-button-width: 104px;
+$default-button-height: 36px;
+
+// FILTER TABS 
+
+$filter-tab-width: 104px;
+$filter-tab-height: 32px;
+
 // BASE HTML SETUP
 * {
     margin: 0;
@@ -115,21 +132,31 @@ $square-side:(($medium-font-size*$normalize-font-addon));
     @if $breakpoint==big-desktop {
         @media only screen and (min-width: $bp-wide) {
             @content;
-        } //1680
+        }
+
+        //1680
     }
     @if $breakpoint==desktop {
         @media only screen and (min-width: $bp-desktop) {
             @content;
-        } //1024px;
+        }
+
+        //1024px;
     }
+
     @if $breakpoint==tab {
         @media only screen and (min-width: $bp-medium) {
             @content;
-        } //760px;
+        }
+
+        //760px;
     }
+
     @if $breakpoint==phone {
         @media only screen and (min-width: $bp-small) {
             @content;
-        } //550px;
+        }
+
+        //550px;
     }
 }

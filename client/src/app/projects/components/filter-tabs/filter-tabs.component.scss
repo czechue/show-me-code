@@ -1,0 +1,36 @@
+@import 'styles';
+
+.filter-tabs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: $p6;
+}
+
+.filter-tabs__tab {
+    margin: $p4;
+    width: $filter-tab-width;
+    height: $filter-tab-height;
+    border: none;
+    background: none;
+
+    // tu nie wiem czy wynosić font weight do zmiennych
+    font-weight: 400;
+
+    font-size: $small-font-size;
+    color: $dolphin;
+    border-radius: $default-border-radius;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background: $selago;
+    }
+
+    // simulate active tab class
+    &:focus {
+        background: $mona-lisa;
+        color: $white;
+    }
+}
