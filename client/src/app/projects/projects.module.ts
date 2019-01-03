@@ -5,8 +5,8 @@ import { ProjectsListComponent } from './containers/projects-list/projects-list.
 import { ProjectsService } from './projects.service';
 import { ProjectComponent } from './containers/project/project.component';
 import { RouterModule, Routes } from '@angular/router';
-import { ProjectsListItemComponent } from './components/projects-list-item/projects-list-item.component';
-import { FilterTabsComponent } from './components/filter-tabs/filter-tabs.component';
+import { ProjectTasksComponent } from './containers/project/project-tasks/project-tasks.component';
+import { ProjectSolutionsComponent } from './containers/project/project-solutions/project-solutions.component';
 
 export const ROUTES: Routes = [
     {
@@ -22,7 +22,7 @@ export const ROUTES: Routes = [
 @NgModule({
     imports: [CommonModule, HttpClientModule, RouterModule.forChild(ROUTES)],
     providers: [ProjectsService],
-    declarations: [ProjectsListComponent, ProjectComponent, ProjectsListItemComponent, FilterTabsComponent],
+    declarations: [ProjectsListComponent, ProjectComponent, ProjectTasksComponent, ProjectSolutionsComponent],
     exports: [ProjectsListComponent, ProjectComponent]
 })
 export class ProjectsModule {}

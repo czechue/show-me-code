@@ -1,0 +1,14 @@
+<div class="solution"
+*ngFor="let solution of solutions"
+>
+    <ul class="solution-wrapper">
+        <li class="solution-author"><span class="solution-label">Author: </span>{{ solution.user.name }}</li>
+        <li class="solution-stack"><span class="solution-label">Stack: </span>{{ solution.stack }}</li>
+        <li class="solution-points"><span class="solution-label">Points: </span>{{ solution.lsScore }}</li>
+        <li class="solution-date"><span class="solution-label">Date: </span>{{ solution.createdAt | date }}</li>
+    </ul>
+    <div class="solution-buttons-wrapper">
+        <button class="solution-button solution-github">GH Link</button>
+        <button class="solution-button solution-live">Live Link</button>
+    </div>
+</div>

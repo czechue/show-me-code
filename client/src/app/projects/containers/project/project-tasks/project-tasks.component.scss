@@ -1,0 +1,21 @@
+@import 'styles';
+
+.tasks {
+    &-item {
+        position: relative;
+        padding: $p2 0 $p2 $p2;
+        margin: $p2 0 $p2 0;
+        background-color: #eee;
+        font-size: $medium-font-size;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: $square-side;
+            height: $square-side;
+            margin-left: (-($square-side+0.3));
+            top: 15%;
+            background: $button-light-gradient;
+        }
+    }
+}

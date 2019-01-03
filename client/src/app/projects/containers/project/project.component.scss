@@ -1,0 +1,49 @@
+@import 'styles';
+.project {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: $medium-width;
+    padding: $p6 $p4;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $background-color;
+    @include respond(tab) {
+        grid-template-columns: 1fr 1fr;
+    }
+    &-image {
+        display: block;
+        max-width: 300px;
+        height: auto;
+        margin: $p4 auto;
+    }
+    &-header {
+        width: 100%;
+        border-bottom: 2px solid $theme-hr-color;
+    }
+    &-title {
+        @extend %theme-title;
+    }
+    &-subtitle {
+        @extend %theme-subtitle
+    }
+    &-author {
+        display: block;
+        padding: $p2 0;
+    }
+    &-button {
+        @extend %default-button-styles;
+        margin: $p2 $p1;
+    }
+    &-add {
+        background: $button-light-gradient;
+    }
+    &-column--right {
+        padding-left: $p2;
+    }
+    &-column--left {
+        padding-right: $p2;
+    }
+    &-solutions {
+        padding: $p3 0;
+    }
+}

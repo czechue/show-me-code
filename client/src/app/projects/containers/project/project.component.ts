@@ -27,7 +27,7 @@ export class ProjectComponent implements OnInit {
                 projects =>
                     projects.filter(
                         (project: Project) =>
-                            project._id === '5bb91abcd6d2537e42d2533e'
+                            project._id === '5b9926901c6b836b1c9cb352'
                     )[0]
             )
         );
@@ -38,3 +38,5 @@ export class ProjectComponent implements OnInit {
         this.sub.unsubscribe();
     }
 }
+
+
