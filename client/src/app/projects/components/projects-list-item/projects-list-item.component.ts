@@ -1,7 +1,6 @@
-import { Response } from 'supertest';
 import { Component, OnInit, Input } from '@angular/core';
 import { Project } from '../../../model';
-import { isNgTemplate } from '@angular/compiler';
+
 @Component({
     selector: 'app-projects-list-item',
     template: `
@@ -13,7 +12,7 @@ import { isNgTemplate } from '@angular/compiler';
                     {{ item.skillCategory }}
                 </p>
                 <button class="project-details__button">Details</button>
-                <p class="project-details__date">{{ dateConverter() }}</p>
+                <!--<p class="project-details__date">{{ dateConverter() }}</p>-->
             </figcaption>
         </div>
     `,
@@ -26,10 +25,10 @@ export class ProjectsListItemComponent implements OnInit {
 
     ngOnInit() {}
 
-    dateConverter() {
-        const dateRegexp = /T.{0,}/;
-        return this.item.createdAt === undefined
-            ? 'error'
-            : this.item.createdAt.replace(dateRegexp, '');
-    }
+    // dateConverter() {
+    //     const dateRegexp = /T.{0,}/;
+    //     return this.item.createdAt === undefined
+    //         ? 'error'
+    //         : this.item.createdAt.replace(dateRegexp, '');
+    // }
 }
