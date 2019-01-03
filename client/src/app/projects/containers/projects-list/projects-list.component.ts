@@ -7,18 +7,17 @@ import { Project } from '../../../model';
 @Component({
     selector: 'app-projects-list',
     template: `
-    <div>
-        Project List:
-        <ul>
-            <li *ngFor="let item of (projects$ | async)">
-                {{ item.title }}
-                <p>
-                    {{ item._id }}
-                </p>
-            </li>
-        </ul>
-    </div>
-  `,
+        <div class="projects-list-container">
+        <app-filter-tabs></app-filter-tabs>
+            <ul class="container">
+                <li *ngFor="let item of (projects$ | async)">
+                    <app-projects-list-item
+                        [item]="item"
+                    ></app-projects-list-item>
+                </li>
+            </ul>
+        </div>
+    `,
     styleUrls: ['./projects-list.component.scss']
 })
 export class ProjectsListComponent implements OnInit {

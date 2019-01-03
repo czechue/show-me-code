@@ -1,13 +1,33 @@
-<div class="project-wrapper">
-    
-    <div>
-        Project detail:
-        <p>Created at: {{ (project$ | async)?.createdAt }}</p>
-        <p>Title: {{ (project$ | async)?.title }}</p>
-        <span>JSON:</span>
-        <pre>{{ (project$ | async | json) }}</pre>
+<div class="project">
+    <div class="project-column--left">
+            <div class="project-header">
+                    <h2 class="project-title">{{ (project$ | async)?.title }}</h2>
+                    <p class="project-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+        <img class="project-image" src="https://via.placeholder.com/300" alt="">
+        <span class="project-author">Author: Tomek Panczo</span>
+            <app-project-tasks
+                [tasks]="(project$ | async)?.tasks"
+            ></app-project-tasks>
+        <button class="project-button project-add">Add your solution</button>
+        <button class="project-button project-send">Send your solution</button>
     </div>
-  
-    
-    <img src="https://via.placeholder.com/300">
+    <div class="project-column--right">
+        <div class="project-solutions">
+            <app-project-solutions
+                [solutions]="(project$ | async)?.solutions"
+            ></app-project-solutions>
+        </div>
+    </div>
+
 </div>
+
+<!-- 
+<div>
+    Project detail:
+    <p>Created at: {{ (project$ | async)?.createdAt }}</p>
+    <p>Title: {{ (project$ | async)?.title }}</p>
+    <span class="solution-label">JSON:</span>
+    <pre>{{ (project$ | async | json) }}</pre>
+</div> -->
+

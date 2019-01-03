@@ -1,0 +1,79 @@
+@import 'styles';
+
+.project {
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: $p4;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.project-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    border: 1px solid $selago;
+
+    font-family: $font-family;
+    font-size: $small-font-size;
+    font-weight: 400;
+    color: $meteorite;
+
+    &__category {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        padding: $p2 $p3;
+
+        border-radius: $default-border-radius;
+
+        color: $meteorite;
+    }
+
+    &__title {
+        margin: $p2;
+    }
+
+    &__button {
+        width: $default-button-width;
+        height: $default-button-height;
+
+        margin: $p3;
+
+        border: none;
+        border-radius: $default-border-radius;
+
+        background: $purple-heart;
+
+        font-family: $font-family;
+        color: $white;
+        font-weight: 400;
+
+        cursor: pointer;
+
+        &:hover {
+            background: $meteorite;
+        }
+    }
+
+    &__date {
+        color: $meteorite;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: $p2 $p3;
+    }
+}
